@@ -35,12 +35,19 @@ paper- scissors
     let player2 = 'SCISSORS';
 
     if (player1 === player2) {
-      console.log('it is a draw');
-    } else if (player1 === 'ROCK') {
-      console.log('Player 1 wins!')
-    }
-    else {
-      console.log('Player 2 wins!')
+      console.log('It is a draw');
+    } else if (player1 === 'ROCK' && player2 === 'SCISSORS') {
+      console.log('Player 1 wins with ROCK')
+    } else if (player2 === 'ROCK' && player1 === 'SCISSORS') {
+      console.log('Player 2 wins with ROCK')
+    } else if (player1 === 'SCISSORS' && player2 === 'PAPER') {
+      console.log('Player 1 wins with SCISSORS')
+    } else if (player2 === 'SCISSORS' && player1 === 'PAPER') {
+      console.log('Player 2 wins with SCISSORS')
+    } else if (player1 === 'PAPER' && player2 === 'ROCK') {
+      console.log('Player 1 wins with PAPER')
+    } else {
+      console.log('Player 2 wins with PAPER')
     }
 
     /* 
