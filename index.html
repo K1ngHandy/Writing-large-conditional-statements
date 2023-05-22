@@ -65,6 +65,21 @@ paper- scissors
     let time = 15; // i.e., 3 PM
     let ticketPrice;
 
+    if (age < 13) {
+      ticketPrice = 7
+    } else if (age >= 13 && age <= 64) {
+      if (time < 17) {
+        ticketPrice = 10
+      } else {
+        ticketPrice = 12
+      }
+    } else {
+      if (time < 17) {
+        ticketPrice = 8
+      } else {
+        ticketPrice = 10
+      }
+    } console.log(ticketPrice)
 
   </script>
   <section
